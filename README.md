@@ -1,7 +1,3 @@
-# pytest
-Learnin python
-
-List:
-- An actual Readme
-- Adding all generated and copied passwords to a file
-- An actual UI
+# Password Generator
+I'm actually not going to update this
+(I made it purely to get a grasp of python and tkinter for other uses)

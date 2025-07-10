@@ -21,7 +21,11 @@ def copy_to_clipboard():
         label.cget("text").strip()
     )
     m.update()
-copy_button = tkinter.Button(m, text="Copy to Clipboard", command=copy_to_clipboard)
+def show_message():
+ labeld = tkinter.Label(m, text="Copied!") 
+ labeld.after(2000, labeld.destroy)
+ labeld.place(x=215, y=250)
+copy_button = tkinter.Button(m, text="Copy to Clipboard", command=lambda: [copy_to_clipboard(), show_message()])
 copy_button.place(x=100, y=250)
 button = tkinter.Button(m, text="Generate", command=generate_new_string)
 button.place(x=100, y=200)
